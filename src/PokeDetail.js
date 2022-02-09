@@ -6,4 +6,13 @@ import { getSinglePokemon } from './services/fetch-utils';
 export default function PokeDetail() {
     const [pokemon, setPokemon] = useState([]);
     const params = useParams();
+
+    useEffect(() => {
+        async function onLoad() {
+            const data = await getSinglePokemon(params.id);
+            
+            setPokemon(data);
+        }
+        onLoad();
+    }, [params.id]);
 }
