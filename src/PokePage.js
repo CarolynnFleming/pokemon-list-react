@@ -22,7 +22,7 @@ export default function PokePage() {
 
   return (
     <>
-      <h1>Current Page {page}</h1>
+      <h2>Current Page {page}</h2>
       <div className='buttons'>
         <button onClick={() => setPage(page - 1)}
           disabled={page === 1}>Previous Page</button>
