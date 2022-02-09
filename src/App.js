@@ -10,10 +10,13 @@ import PokeDetail from './PokeDetail';
 export default function App() {
   return (
     <Router>
-      <div>
+      <div className='App'>
         <Switch>
-          <Route>
-            
+          <Route exact path="/">
+            <PokePage />
+          </Route>
+          <Route exact path="/detail/:id">
+            <PokeDetail />
           </Route>
         </Switch>
       </div>
