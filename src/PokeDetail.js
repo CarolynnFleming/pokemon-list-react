@@ -16,16 +16,12 @@ export default function PokeDetail() {
     onLoad();
   }, [params.id]);
 
-
-  function handlePokeClick() {
-    window.open('pokemon');
-  }
-
   return (
     <>
       <Link to='/'>Home</Link>
-      <div className='poke-detail' onClick={handlePokeClick}>
+      <div className='poke-detail'>
         <div className='poke-data'>
+          <p>{pokemon.Pokemon}</p>
           <p>{pokemon.Type1}</p>
           <p>{pokemon.Type2}</p>
           <p>{pokemon.HP}</p>

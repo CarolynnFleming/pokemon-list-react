@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+.pokemon-mon {
+margin: 20px;
+display: flex;
+flex-direction: row;
+}
+
+.pokemon-mon .pokemon-img {
+  width: 200px;
+}
+
+.poks {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.poke-detail {
+  margin:auto;
+  width: 80%;
+  text-align: center;
+}
+
+.poke-img {
+  cursor: pointer;
+  width: 400px;
+}
+
+.poke-detail .poke-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.poke-detail .poke-data p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #81f4e1;
+  margin: 10px;
+  padding: 20px;
+}
