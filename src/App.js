@@ -5,6 +5,7 @@ import {
   Route } from 'react-router-dom';
 import PokePage from './PokePage';
 import PokeDetail from './PokeDetail';
+import './App.css';
 
 
 export default function App() {

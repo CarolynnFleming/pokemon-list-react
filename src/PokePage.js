@@ -24,11 +24,11 @@ export default function PokePage() {
     <>
       <h2>Current Page {page}</h2>
       <div className='buttons'>
-        <button onClick={() => setPage(page - 1)}
-          disabled={page === 1}>Previous Page</button>
+        <button className='button-l' onClick={() => setPage(page - 1)}
+          disabled={page === 1}><span>Previous Page</span></button>
         
-        <button onClick={() => setPage(page + 1)}
-          disabled={pokemons.length < PER_PAGE}>Next Page</button>
+        <button className='button' onClick={() => setPage(page + 1)}
+          disabled={pokemons.length < PER_PAGE}><span>Next Page</span></button>
       </div>
       <PokeList pokemons={pokemons}/>
     </>
